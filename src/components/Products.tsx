@@ -155,7 +155,7 @@ const Products = () => {
           </div>
           <p className="text-muted-foreground text-lg">
           Biz faqat <span className="text-primary font-bold">yirik</span>,
-          buyurtmalar bilan ishlaymiz–kamida <span className="text-primary font-bold">1 tonna.</span> 
+          buyurtmalar bilan ishlaymiz–kamida <span className="text-primary font-bold">20 tonna.</span> 
           </p>
         </div>
       </div>
