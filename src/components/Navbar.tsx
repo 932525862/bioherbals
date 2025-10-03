@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Phone, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import Logo from "@/assets/logos.png";
+import Logo from "@/assets/logo1-Photoroom.png";
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -42,13 +42,13 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-            <img 
+          <div className="flex items-center justify-between h-24"> {/* h-20 o‘rniga h-24 */}
+  <img 
     src={Logo} 
     alt="Logo" 
-    className="h-12 w-auto object-contain" 
+    className="h-16 w-auto object-contain" 
   />
-            </div>
+</div>
           </div>
 
           {/* Desktop Navigation */}

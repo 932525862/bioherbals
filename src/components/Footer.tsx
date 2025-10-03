@@ -1,5 +1,5 @@
 import { Leaf, Facebook, Instagram, Mail, Phone } from "lucide-react";
-import Logo from "@/assets/logos.png";
+import Logo from "@/assets/blog.png";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 

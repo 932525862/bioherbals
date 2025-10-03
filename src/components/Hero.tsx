@@ -70,7 +70,7 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto space-y-8 animate-fade-in">
           <div className="inline-block">
             <span className="px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-white text-xl font-medium">
-              ♻️ 100% Tabiiy Mahsulot
+              ♻️ 100% Tabiiy mahsulot
             </span>
           </div>
 
@@ -100,10 +100,9 @@ const Hero = () => {
               variant="outline"
               size="lg"
               onClick={() => scrollToSection("products")}
-              className="text-lg px-8 py-6 text-[#000000] border-white/40 hover:bg-white/20"
+              className="text-lg  px-8 py-6 text-[#000000] border-white/40 hover:bg-white/20"
             >
-              MAHSULOTLAR
-      
+              Mahsulotlar
             </Button>
           </div>
 

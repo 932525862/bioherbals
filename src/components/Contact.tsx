@@ -9,14 +9,14 @@ import { toast } from "sonner";
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
-    phone: "",
+    email: "",
     message: "",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast.success("Xabaringiz muvaffaqiyatli yuborildi! Tez orada aloqaga chiqamiz.");
-    setFormData({ name: "", phone: "", message: "" });
+    setFormData({ name: "", email: "", message: "" });
   };
 
   const contactMethods = [
@@ -58,7 +58,7 @@ const Contact = () => {
             Bog'lanish
           </span>
           <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6">
-            Biz Bilan Bog'laning
+            Biz bilan bog'laning
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             Savollaringiz bormi? Biz har doim sizga yordam berishga tayyormiz
@@ -69,7 +69,7 @@ const Contact = () => {
           {/* Contact Methods */}
           <div className="space-y-8 animate-slide-in-left">
             <div>
-              <h3 className="text-2xl font-bold mb-6">Aloqa Ma'lumotlari</h3>
+              <h3 className="text-2xl font-bold mb-6">Aloqa ma'lumotlari</h3>
               <p className="text-muted-foreground mb-8">
                 O'zingizga qulay usulda biz bilan bog'laning. Biz tez orada javob beramiz va sizga yordam beramiz.
               </p>
@@ -150,14 +150,14 @@ const Contact = () => {
 
                 <div>
                   <label className="block text-sm font-medium mb-2">
-                    Telefon raqam *
+                  Elektron pochta *
                   </label>
                   <Input
                     type="tel"
-                    placeholder="+998 90 123-45-67"
-                    value={formData.phone}
+                    placeholder="info@bioherbals.uz"
+                    value={formData.email}
                     onChange={(e) =>
-                      setFormData({ ...formData, phone: e.target.value })
+                      setFormData({ ...formData, email: e.target.value })
                     }
                     required
                     className="border-border/50"
@@ -181,7 +181,7 @@ const Contact = () => {
 
                 <Button type="submit" variant="hero" size="lg" className="w-full">
                   <Send className="mr-2 h-5 w-5" />
-                  Xabar Yuborish
+                  Xabar yuborish
                 </Button>
               </form>
             </CardContent>

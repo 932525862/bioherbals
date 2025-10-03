@@ -50,7 +50,7 @@ const Features = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
               <div className="absolute bottom-8 left-8 right-8 text-white">
-                <h3 className="text-2xl font-bold mb-2">Tabiiy Mahsulotlar</h3>
+                <h3 className="text-2xl font-bold mb-2">Tabiiy mahsulotlar</h3>
                 <p className="text-white/90">
                 O‘zbekiston quyoshi ostida yetilgan quritilgan mevalar, tog‘ giyohlari va mazali yong‘oqlar ulgurji savdosi. Yuqori sifat va tezkor yetkazib berish kafolatlanadi.
                 </p>
@@ -65,10 +65,10 @@ const Features = () => {
           <div className="space-y-8 animate-slide-in-right">
             <div>
               <span className="text-primary font-semibold text-sm uppercase tracking-wider">
-                Bizning Afzalliklarimiz
+                Bizning afzalliklarimiz
               </span>
               <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6">
-                Nima Uchun Bizni Tanlaydilar?
+                Nima uchun bizni tanlaydilar?
               </h2>
               <p className="text-muted-foreground text-lg">
               Bioherbals — sog‘lom hayot uchun tabiiy mahsulotlar manbai. Biz yuqori sifatli quritilgan mevalar, sabzavotlar va shifobaxsh o‘simliklarni tayyorlab, ularning tabiiy ta’mi, hidi va foydali xususiyatlarini saqlagan holda eksport qilamiz. Bioherbals — har bir mahsulotda sifat va g‘amxo‘rlik.

@@ -41,7 +41,7 @@ const Delivery = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <span className="text-primary font-semibold text-sm uppercase tracking-wider">
-            Yetkazib Berish
+            Yetkazib berish
           </span>
           <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6">
            Yetkazib berish usullari
@@ -90,7 +90,7 @@ const Delivery = () => {
 
         {/* Delivery Regions */}
         <div className="bg-card rounded-3xl p-8 md:p-12 shadow-[var(--shadow-soft)] border border-border/50 animate-fade-in">
-          <h3 className="text-3xl font-bold text-center mb-8">Yetkazib Berish Hududlari</h3>
+          <h3 className="text-3xl font-bold text-center mb-8">Yetkazib berish hududlari</h3>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {deliveryRegions.map((region, index) => (
               <div
