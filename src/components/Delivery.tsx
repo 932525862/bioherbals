@@ -1,39 +1,39 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Package, Truck, CheckCircle, MapPin } from "lucide-react";
+import { TrainFront, Truck, Ship, Plane } from "lucide-react";
 
 const Delivery = () => {
   const deliverySteps = [
     {
-      icon: Package,
-      title: "Buyurtma",
-      description: "Siz buyurtma berasiz va to'lovni amalga oshirasiz",
+      icon: Truck,
+      title: "Yuk mashina",
+      description: "Yuk mashinasi orqali yetkazib berish",
       step: "01",
     },
     {
-      icon: CheckCircle,
-      title: "Tayyorlov",
-      description: "Mahsulotlar ehtiyotkorlik bilan qadoqlanadi",
+      icon: TrainFront,
+      title: "Temir yo‘l ",
+      description: "Temir yo‘l orqali yetkazib berish",
       step: "02",
     },
     {
-      icon: Truck,
-      title: "Yetkazish",
-      description: "Mahsulot yetkazib berish xizmatiga topshiriladi",
+      icon: Ship,
+      title: "Dengiz yo‘li",
+      description: "Dengiz yo‘li orqali yetkazib berish",
       step: "03",
     },
     {
-      icon: MapPin,
-      title: "Qabul Qilish",
-      description: "Siz mahsulotni 1-3 kun ichida qabul qilasiz",
+      icon: Plane,
+      title: "Havo yo‘li",
+      description: "Havo yo‘li orqali yetkazib berish",
       step: "04",
     },
   ];
 
   const deliveryRegions = [
-    { name: "Rossiya", time: "1-3 kun" },
-    { name: "Qozog'iston", time: "2-4 kun" },
-    { name: "Belorussiya", time: "2-5 kun" },
-    { name: "MDH davlatlari", time: "3-7 kun" },
+    { name: "Osiyo", time: "Osiyo davlatlarining barchasi" },
+    { name: "Yevropa", time: "Yevropa davlatlarining barchasi" },
+    { name: "Afrika", time: "Afrika davlatlarining barchasi" },
+    { name: "AQSH", time: "AQSH va Lotin Amerikasi davlatlari" },
   ];
 
   return (
@@ -44,10 +44,10 @@ const Delivery = () => {
             Yetkazib Berish
           </span>
           <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6">
-            Qanday Ishlaydi?
+           Yetkazib berish usullari
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Oddiy va qulay yetkazib berish jarayoni - sizning vaqtingizni tejash uchun
+          Oddiy va qulay – mahsulotingizni siz xohlagan usulda tez va sifatli yetkazib beramiz.
           </p>
         </div>
 
@@ -105,7 +105,7 @@ const Delivery = () => {
           
           <div className="mt-8 pt-8 border-t border-border/50 text-center">
             <p className="text-muted-foreground">
-              <span className="font-semibold text-foreground">Bepul yetkazib berish:</span> 50,000 rubldan ortiq buyurtmalar uchun
+              <span className="font-semibold text-foreground">Hudud va mintaqadan qat’i nazar</span> butun dunyo bo‘ylab yetkazib beramiz.
             </p>
           </div>
         </div>

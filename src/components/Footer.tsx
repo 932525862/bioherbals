@@ -1,5 +1,5 @@
 import { Leaf, Facebook, Instagram, Mail, Phone } from "lucide-react";
-
+import Logo from "@/assets/logos.png";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -31,16 +31,19 @@ const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center">
+              {/* <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center">
                 <Leaf className="w-6 h-6 text-white" />
-              </div>
+              </div> */}
               <span className="text-xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                OLTOY O'TLARI
+              <img 
+    src={Logo} 
+    alt="Logo" 
+    className="h-12 w-auto object-contain" 
+  />
               </span>
             </div>
             <p className="text-muted-foreground text-sm">
-              Oltoy tog'laridan qo'lda terilgan tabiiy o'tlar va mahsulotlar ulgurji savdosi.
-              Yuqori sifat va tez yetkazib berish kafolatlanadi.
+            O‘zbekiston quyoshi ostida yetilgan tabiiy quritilgan mevalar, tog‘lardan yig‘ilgan shifobaxsh giyohlar va mazali yong‘oq mahsulotlari ulgurji savdosi. Yuqori sifat va tezkor yetkazib berish kafolatlanadi.
             </p>
           </div>
 
@@ -88,7 +91,7 @@ const Footer = () => {
                   className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm"
                 >
                   <Phone className="w-4 h-4" />
-                  +998 90 123-45-67
+                  +998 00 000-00-00
                 </a>
               </li>
               <li>
@@ -97,7 +100,7 @@ const Footer = () => {
                   className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm"
                 >
                   <Mail className="w-4 h-4" />
-                  info@oltoy-export.uz
+                  info@bioherbals.uz
                 </a>
               </li>
             </ul>
@@ -131,10 +134,10 @@ const Footer = () => {
         <div className="pt-8 border-t border-border/50">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-muted-foreground text-center md:text-left">
-              © {currentYear} Oltoy O'tlari. Barcha huquqlar himoyalangan.
+              © {currentYear} BIOHERBALS. Barcha huquqlar himoyalangan.
             </p>
             <p className="text-sm text-muted-foreground text-center md:text-right">
-              Mahsulotlar Rossiya, Qozog'iston va Belorussiyaga yetkazib beriladi
+            Hudud va mintaqadan qat’i nazar butun dunyo bo‘ylab yetkazib beramiz.
             </p>
           </div>
         </div>

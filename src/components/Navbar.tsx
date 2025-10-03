@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Phone, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
+import Logo from "@/assets/logos.png";
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -43,7 +43,11 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <div className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              OLTOY O'TLARI
+            <img 
+    src={Logo} 
+    alt="Logo" 
+    className="h-12 w-auto object-contain" 
+  />
             </div>
           </div>
 
@@ -65,11 +69,11 @@ const Navbar = () => {
           <div className="hidden md:flex items-center space-x-3">
             <Button variant="ghost" size="sm">
               <Phone className="mr-2 h-4 w-4" />
-              +998 90 123-45-67
+              +998 00 000-00-00
             </Button>
             <Button variant="hero" size="sm">
               <MessageCircle className="mr-2 h-4 w-4" />
-              NARX OLISH
+              Bog‘lanish
             </Button>
           </div>
 
@@ -97,11 +101,11 @@ const Navbar = () => {
             <div className="pt-4 border-t border-border space-y-3">
               <Button variant="outline" size="sm" className="w-full">
                 <Phone className="mr-2 h-4 w-4" />
-                +998 90 123-45-67
+                +998 00 000-00-00
               </Button>
               <Button variant="hero" size="sm" className="w-full">
                 <MessageCircle className="mr-2 h-4 w-4" />
-                NARX OLISH
+                Bog‘lanish
               </Button>
             </div>
           </div>

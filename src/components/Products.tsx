@@ -154,8 +154,8 @@ const Products = () => {
             <h3 className="text-2xl font-bold">Minimal Buyurtma</h3>
           </div>
           <p className="text-muted-foreground text-lg">
-            Bir mahsulotdan <span className="text-primary font-bold">5 kg</span>,
-            jami summa <span className="text-primary font-bold">10,000 rubl</span> dan
+          Biz faqat <span className="text-primary font-bold">yirik</span>,
+          buyurtmalar bilan ishlaymiz–kamida <span className="text-primary font-bold">1 tonna.</span> 
           </p>
         </div>
       </div>
