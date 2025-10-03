@@ -1,6 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Leaf } from "lucide-react";
-import heroImage from "@/assets/hero-mountains.jpg";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
+import heroImage1 from "@/assets/hero-1.jpg";
+import heroImage2 from "@/assets/hero-2.jpg";
+import heroImage3 from "@/assets/hero-3.jpg";
 
 const Hero = () => {
   const scrollToSection = (id: string) => {
@@ -10,21 +18,38 @@ const Hero = () => {
     }
   };
 
+  const heroImages = [heroImage1, heroImage2, heroImage3];
+
   return (
     <section
       id="hero"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Background Image with Overlay */}
+      {/* Background Image Carousel with Overlay */}
       <div className="absolute inset-0 z-0">
-        <img
-          src={heroImage}
-          alt="Oltoy tog'lari"
-          className="w-full h-full object-cover"
-        />
+        <Carousel
+          opts={{ loop: true }}
+          plugins={[
+            Autoplay({
+              delay: 5000,
+            }),
+          ]}
+          className="w-full h-full"
+        >
+          <CarouselContent className="h-full">
+            {heroImages.map((image, index) => (
+              <CarouselItem key={index} className="h-screen">
+                <img
+                  src={image}
+                  alt={`Oltoy tog'lari ${index + 1}`}
+                  className="w-full h-full object-cover"
+                />
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+        </Carousel>
         <div
-          className="absolute inset-0"
-          style={{ background: "var(--gradient-hero)" }}
+          className="absolute inset-0 bg-gradient-to-br from-primary/60 to-accent/60"
         />
       </div>
 
