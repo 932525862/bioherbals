@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -5,24 +7,55 @@ import { Textarea } from "@/components/ui/textarea";
 import { Phone, Mail, MessageCircle, Send } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const { t } = useTranslation();
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  // 🔹 Telegram sozlamalari
+  const BOT_TOKEN = "8323212944:AAGmTs2XqmRfkKdzGu2nIFDhrkyxcPC005k";
+  const CHAT_ID = "-1003125167301";
+  const TELEGRAM_API = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast.success("Xabaringiz muvaffaqiyatli yuborildi! Tez orada aloqaga chiqamiz.");
-    setFormData({ name: "", email: "", message: "" });
+
+    const text = `
+📩 ${t("contact.newMessage")}
+👤 ${t("contact.name")}: ${formData.name}
+📧 ${t("contact.email")}: ${formData.email}
+💬 ${t("contact.message")}: ${formData.message || t("contact.noMessage")}
+`;
+
+    try {
+      await fetch(TELEGRAM_API, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          chat_id: CHAT_ID,
+          text: text,
+          parse_mode: "HTML",
+        }),
+      });
+
+      toast.success(t("contact.success"));
+      setFormData({ name: "", email: "", message: "" });
+    } catch (error) {
+      toast.error(t("contact.error"));
+      console.error("Telegramga yuborishda xatolik:", error);
+    }
   };
 
   const contactMethods = [
     {
       icon: Phone,
-      title: "Telefon",
+      title: t("contact.phone"),
       value: "+998 00 000-00-00",
       link: "tel:+998000000000",
       color: "from-blue-500 to-cyan-600",
@@ -30,7 +63,7 @@ const Contact = () => {
     {
       icon: MessageCircle,
       title: "Telegram",
-      value: "@bioherbals_export", 
+      value: "@bioherbals_export",
       link: "",
       color: "from-cyan-500 to-blue-600",
     },
@@ -55,13 +88,13 @@ const Contact = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <span className="text-primary font-semibold text-sm uppercase tracking-wider">
-            Bog'lanish
+            {t("contact.sectionTitle")}
           </span>
           <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6">
-            Biz bilan bog'laning
+            {t("contact.heading")}
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Savollaringiz bormi? Biz har doim sizga yordam berishga tayyormiz
+            {t("contact.subheading")}
           </p>
         </div>
 
@@ -69,9 +102,9 @@ const Contact = () => {
           {/* Contact Methods */}
           <div className="space-y-8 animate-slide-in-left">
             <div>
-              <h3 className="text-2xl font-bold mb-6">Aloqa ma'lumotlari</h3>
+              <h3 className="text-2xl font-bold mb-6">{t("contact.infoTitle")}</h3>
               <p className="text-muted-foreground mb-8">
-                O'zingizga qulay usulda biz bilan bog'laning. Biz tez orada javob beramiz va sizga yordam beramiz.
+                {t("contact.infoText")}
               </p>
             </div>
 
@@ -109,19 +142,19 @@ const Contact = () => {
             {/* Working Hours */}
             <Card className="border-border/50 bg-gradient-to-br from-primary/5 to-accent/5 animate-fade-in">
               <CardContent className="p-6">
-                <h4 className="font-semibold mb-4">Ish Vaqti</h4>
+                <h4 className="font-semibold mb-4">{t("contact.hoursTitle")}</h4>
                 <div className="space-y-2 text-sm">
                   <div className="flex justify-between">
-                    <span className="text-muted-foreground">Dushanba - Juma:</span>
+                    <span className="text-muted-foreground">{t("contact.weekdays")}</span>
                     <span className="font-medium">09:00 - 18:00</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-muted-foreground">Shanba:</span>
+                    <span className="text-muted-foreground">{t("contact.saturday")}</span>
                     <span className="font-medium">10:00 - 15:00</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-muted-foreground">Yakshanba:</span>
-                    <span className="font-medium">Dam olish</span>
+                    <span className="text-muted-foreground">{t("contact.sunday")}</span>
+                    <span className="font-medium">{t("contact.closed")}</span>
                   </div>
                 </div>
               </CardContent>
@@ -131,14 +164,14 @@ const Contact = () => {
           {/* Contact Form */}
           <Card className="border-border/50 shadow-[var(--shadow-medium)] animate-slide-in-right">
             <CardContent className="p-8">
-              <h3 className="text-2xl font-bold mb-6">Xabar Yuborish</h3>
+              <h3 className="text-2xl font-bold mb-6">{t("contact.formTitle")}</h3>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label className="block text-sm font-medium mb-2">
-                    Ismingiz *
+                    {t("contact.name")} *
                   </label>
                   <Input
-                    placeholder="To'liq ismingizni kiriting"
+                    placeholder={t("contact.namePlaceholder")}
                     value={formData.name}
                     onChange={(e) =>
                       setFormData({ ...formData, name: e.target.value })
@@ -150,10 +183,10 @@ const Contact = () => {
 
                 <div>
                   <label className="block text-sm font-medium mb-2">
-                  Elektron pochta *
+                    {t("contact.email")} *
                   </label>
                   <Input
-                    type="tel"
+                    type="email"
                     placeholder="info@bioherbals.uz"
                     value={formData.email}
                     onChange={(e) =>
@@ -166,10 +199,10 @@ const Contact = () => {
 
                 <div>
                   <label className="block text-sm font-medium mb-2">
-                    Xabaringiz
+                    {t("contact.message")}
                   </label>
                   <Textarea
-                    placeholder="Savol yoki fikringizni yozing..."
+                    placeholder={t("contact.messagePlaceholder")}
                     rows={5}
                     value={formData.message}
                     onChange={(e) =>
@@ -181,7 +214,7 @@ const Contact = () => {
 
                 <Button type="submit" variant="hero" size="lg" className="w-full">
                   <Send className="mr-2 h-5 w-5" />
-                  Xabar yuborish
+                  {t("contact.send")}
                 </Button>
               </form>
             </CardContent>

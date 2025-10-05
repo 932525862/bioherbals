@@ -1,0 +1,212 @@
+{
+    "navbar": {
+      "home": "BOSH SAHIFA",
+      "products": "MAHSULOTLAR",
+      "features": "AFZALLIKLAR",
+      "delivery": "YETKAZISH",
+      "contact": "ALOQA",
+      "connect": "Bog‘lanish"
+    },
+    "contact": {
+        "sectionTitle": "Bog'lanish",
+        "heading": "Biz bilan bog'laning",
+        "subheading": "Savollaringiz bormi? Biz har doim sizga yordam berishga tayyormiz.",
+        "infoTitle": "Aloqa ma'lumotlari",
+        "infoText": "O'zingizga qulay usulda biz bilan bog'laning. Biz tez orada javob beramiz va sizga yordam beramiz.",
+        "phone": "Telefon",
+        "hoursTitle": "Ish Vaqti",
+        "weekdays": "Dushanba - Juma:",
+        "saturday": "Shanba:",
+        "sunday": "Yakshanba:",
+        "closed": "Dam olish",
+        "formTitle": "Xabar Yuborish",
+        "name": "Ismingiz",
+        "namePlaceholder": "To'liq ismingizni kiriting",
+        "email": "Elektron pochta",
+        "message": "Xabaringiz",
+        "messagePlaceholder": "Savol yoki fikringizni yozing...",
+        "send": "Xabar yuborish",
+        "success": "Xabaringiz muvaffaqiyatli yuborildi! Tez orada aloqaga chiqamiz.",
+        "error": "Xabar yuborishda xatolik yuz berdi. Iltimos, keyinroq urinib ko‘ring.",
+        "newMessage": "Yangi xabar Bioherbals saytidan",
+        "noMessage": "Xabar yo‘q"
+      },
+      "delivery": {
+        "sectionTitle": "Yetkazib berish",
+        "mainTitle": "Yetkazib berish usullari",
+        "description": "Oddiy va qulay – mahsulotingizni siz xohlagan usulda tez va sifatli yetkazib beramiz.",
+        "terms": {
+          "title": "To‘lov shartlari:",
+          "text": "50% oldindan to‘lov, 50% yuk manzilga yetib borgach to‘lanadi."
+        },
+        "methods": {
+          "sea": {
+            "title": "Dengiz Yo'li",
+            "description": "Dengiz yo‘li orqali buyurtmalarni yetkazib berish",
+            "features": [
+              "AQSH, Lotin Amerikasi, Afrika davlatlari, Avstraliya",
+              "Minimal miqdor: 20 tonna yoki bitta konteyner buyurtma",
+              "10-30 kun yetkazib berish"
+            ]
+          },
+          "train": {
+            "title": "Temir Yo'l",
+            "description": "Temir yo‘l orqali xavfsiz va arzon yetkazib berish",
+            "features": [
+              "MDH davlatlari, Xitoy, Yevropa davlatlari, Hindiston, Eron",
+              "Minimal miqdor: 20 tonna yoki bitta konteyner buyurtma",
+              "15-20 kun yetkazib berish"
+            ]
+          },
+          "truck": {
+            "title": "Avtomobil",
+            "description": "Yuk mashinalarida yetkazib berish",
+            "features": [
+              "AQSH, Lotin Amerikasi, Afrika davlatlari, Avstraliya",
+              "Minimal miqdor: 20 tonna yoki bitta konteyner buyurtma",
+              "10-30 kun yetkazib berish"
+            ]
+          },
+          "air": {
+            "title": "Havo Yo'li",
+            "description": "Havo yo‘li orqali tezkor yetkazib berish",
+            "features": [
+              "Butun dunyo bo‘ylab",
+              "Minimal miqdor: 20 tonna",
+              "2-5 kun yetkazib berish"
+            ]
+          }
+        },
+        "regions": {
+          "title": "Yetkazib berish hududlari",
+          "items": [
+            { "name": "Osiyo", "desc": "Osiyo davlatlarining barchasi" },
+            { "name": "Yevropa", "desc": "Yevropa davlatlarining barchasi" },
+            { "name": "Afrika", "desc": "Afrika davlatlarining barchasi" },
+            { "name": "AQSH", "desc": "AQSH va Lotin Amerikasi davlatlari" }
+          ],
+          "footer": {
+            "bold": "Hudud va mintaqadan qat’i nazar",
+            "text": "butun dunyo bo‘ylab yetkazib beramiz."
+          }
+        },
+        "modal": {
+          "title": "Xabar yuborish",
+          "nameLabel": "Ismingiz *",
+          "namePlaceholder": "To‘liq ismingizni kiriting",
+          "emailLabel": "Elektron pochta *",
+          "emailPlaceholder": "info@bioherbals.uz",
+          "messageLabel": "Xabaringiz",
+          "messagePlaceholder": "Savol yoki fikringizni yozing...",
+          "submitButton": "Xabar yuborish"
+        },
+        "toast": {
+          "success": "Xabaringiz muvaffaqiyatli yuborildi! Tez orada aloqaga chiqamiz.",
+          "error": "Xabar yuborishda xatolik yuz berdi. Iltimos, keyinroq urinib ko‘ring."
+        }
+      },
+      "hero": {
+        "naturalProduct": "100% Tabiiy mahsulot",
+        "title": "O‘zbekistonning bebaho ne’matlari – quritilgan mevalar, giyohlar va mazali yong‘oqlar bir joyda.",
+        "brand": "BIOHERBALS",
+        "subtitle": "Quritilgan mevalar, shifobaxsh giyohlar va mazali yong‘oqlar – dunyoning istalgan nuqtasiga yetkazib beriladi.",
+        "contactBtn": "Bog‘lanish uchun",
+        "productsBtn": "Mahsulotlar"
+      },
+      "features": {
+    "section": {
+      "subtitle": "Bizning afzalliklarimiz",
+      "title": "Nima uchun bizni tanlaydilar?",
+      "description": "Bioherbals — sog‘lom hayot uchun tabiiy mahsulotlar manbai. Biz yuqori sifatli quritilgan mevalar, sabzavotlar va shifobaxsh o‘simliklarni tayyorlab, ularning tabiiy ta’mi, hidi va foydali xususiyatlarini saqlagan holda eksport qilamiz. Bioherbals — har bir mahsulotda sifat va g‘amxo‘rlik."
+    },
+    "image": {
+      "alt": "O‘zbekiston mahsulotlari",
+      "title": "Tabiiy mahsulotlar",
+      "description": "O‘zbekiston quyoshi ostida yetilgan quritilgan mevalar, tog‘ giyohlari va mazali yong‘oqlar ulgurji savdosi. Yuqori sifat va tezkor yetkazib berish kafolatlanadi."
+    },
+    "items": {
+      "quality": {
+        "title": "Yuqori sifat",
+        "description": "Barcha mahsulotlar qo'lda terilgan va sifat nazoratidan o'tgan"
+      },
+      "delivery": {
+        "title": "Tez yetkazish",
+        "description": "Oddiy va qulay – mahsulotingizni siz xohlagan usulda tez va sifatli yetkazib beramiz."
+      },
+      "certified": {
+        "title": "Sertifikatlangan",
+        "description": "Barcha kerakli sertifikatlar va ruxsatnomalar mavjud"
+      },
+      "partner": {
+        "title": "Ishonchli hamkor",
+        "description": "Har bir mijoz uchun ishonchli hamkorlikni kafolatlaymiz."
+      },
+      "guarantee": {
+        "title": "Kafolat",
+        "description": "Mahsulot sifati va xavfsizligiga to'liq kafolat beramiz"
+      },
+      "support": {
+        "title": "24/7 Qo'llab-quvvatlash",
+        "description": "Har qanday savollarga tezkor javob va yordam"
+      }
+    }
+  },
+
+  "products": {
+    "sectionTitle": "Biz taqdim etamiz",
+    "categories": {
+      "herbs": "GIYOHLAR VA CHOYLAR",
+      "fruits": "QURITILGAN MEVALAR",
+      "nuts": "YONG‘OQLI MAHSULOTLAR"
+    },
+    "herbsList": {
+      "Травы": "Dorivor o‘tlar",
+      "Специи": "Ziravorlar va hidi yoqimli mahsulotlar",
+      "Фиточаи": "Fitoto‘plam choylar",
+      "Иван": "Ivan choyi (o‘t choyi)",
+      "Плоды": "Mevalar va rezavorlar",
+      "Коренья": "Ildizlar",
+      "Грибы": "Qo‘ziqorinlar",
+      "Цветы": "Gullar"
+    },
+    "fruitsList": {
+      "Изюм": "Sultana mayizi",
+      "ИзюмТомпсон": "Tompson mayizi",
+      "ЧёрныйИзюм": "Qora mayiz",
+      "Курага": "Quritilgan o‘rik (kuraga)",
+      "КурагаОрганик": "Organik kuraga",
+      "Чернослив": "Quritilgan olxo‘ri (chernosliv)"
+    },
+    "nutsList": {
+      "Yongoq": "Yong‘oq",
+      "Миндаль": "Bodom"
+    },
+    "minimal": {
+      "title": "Minimal buyurtma",
+      "description": "Biz faqat yirik buyurtmalar bilan ishlaymiz – kamida 20 tonna."
+    }
+  },
+  "footer": {
+    "description": "O‘zbekiston quyoshi ostida yetilgan tabiiy quritilgan mevalar, tog‘lardan yig‘ilgan shifobaxsh giyohlar va mazali yong‘oq mahsulotlari ulgurji savdosi. Yuqori sifat va tezkor yetkazib berish kafolatlanadi.",
+    "companyTitle": "Kompaniya",
+    "companyLinks": {
+      "about": "Biz haqimizda",
+      "products": "Mahsulotlar",
+      "delivery": "Yetkazib berish",
+      "contact": "Aloqa"
+    },
+    "legalTitle": "Huquqiy",
+    "legalLinks": {
+      "terms": "Foydalanish shartlari",
+      "privacy": "Maxfiylik siyosati",
+      "refund": "Qaytarish shartlari"
+    },
+    "contactTitle": "Bog‘lanish",
+    "phone": "Telefon",
+    "email": "Elektron pochta",
+    "socialTitle": "Ijtimoiy tarmoqlar",
+    "rights": "Barcha huquqlar himoyalangan.",
+    "worldwide": "Hudud va mintaqadan qat’i nazar butun dunyo bo‘ylab yetkazib beramiz."
+  }
+      
+  }

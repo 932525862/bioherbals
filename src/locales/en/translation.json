@@ -1,0 +1,212 @@
+{
+    "navbar": {
+      "home": "HOME",
+      "products": "PRODUCTS",
+      "features": "FEATURES",
+      "delivery": "DELIVERY",
+      "contact": "CONTACT",
+      "connect": "Get in touch"
+    },
+    "contact": {
+      "sectionTitle": "Contact",
+      "heading": "Get in touch with us",
+      "subheading": "Have any questions? We’re always ready to help you.",
+      "infoTitle": "Contact Information",
+      "infoText": "Reach out to us in any convenient way. We’ll respond as soon as possible and assist you.",
+      "phone": "Phone",
+      "hoursTitle": "Working Hours",
+      "weekdays": "Monday – Friday:",
+      "saturday": "Saturday:",
+      "sunday": "Sunday:",
+      "closed": "Closed",
+      "formTitle": "Send a Message",
+      "name": "Your Name",
+      "namePlaceholder": "Enter your full name",
+      "email": "Email",
+      "message": "Message",
+      "messagePlaceholder": "Write your question or comment...",
+      "send": "Send Message",
+      "success": "Your message has been sent successfully! We’ll get back to you soon.",
+      "error": "An error occurred while sending your message. Please try again later.",
+      "newMessage": "New message from the Bioherbals website",
+      "noMessage": "No messages"
+    },
+    "delivery": {
+      "sectionTitle": "Delivery",
+      "mainTitle": "Delivery Methods",
+      "description": "Simple and convenient — we deliver your products quickly and reliably in the way you prefer.",
+      "terms": {
+        "title": "Payment Terms:",
+        "text": "50% prepayment, 50% upon delivery to the destination."
+      },
+      "methods": {
+        "sea": {
+          "title": "Sea Freight",
+          "description": "Delivery of orders by sea route",
+          "features": [
+            "USA, Latin America, African countries, Australia",
+            "Minimum order: 20 tons or one container",
+            "Delivery time: 10–30 days"
+          ]
+        },
+        "train": {
+          "title": "Railway Transport",
+          "description": "Safe and affordable delivery by railway",
+          "features": [
+            "CIS countries, China, European countries, India, Iran",
+            "Minimum order: 20 tons or one container",
+            "Delivery time: 15–20 days"
+          ]
+        },
+        "truck": {
+          "title": "Truck Transport",
+          "description": "Delivery by trucks",
+          "features": [
+            "USA, Latin America, African countries, Australia",
+            "Minimum order: 20 tons or one container",
+            "Delivery time: 10–30 days"
+          ]
+        },
+        "air": {
+          "title": "Air Freight",
+          "description": "Fast air delivery",
+          "features": [
+            "Worldwide",
+            "Minimum order: 20 tons",
+            "Delivery time: 2–5 days"
+          ]
+        }
+      },
+      "regions": {
+        "title": "Delivery Regions",
+        "items": [
+          { "name": "Asia", "desc": "All Asian countries" },
+          { "name": "Europe", "desc": "All European countries" },
+          { "name": "Africa", "desc": "All African countries" },
+          { "name": "USA", "desc": "USA and Latin American countries" }
+        ],
+        "footer": {
+          "bold": "Regardless of the region or country,",
+          "text": "we deliver worldwide."
+        }
+      },
+      "modal": {
+        "title": "Send a Message",
+        "nameLabel": "Your Name *",
+        "namePlaceholder": "Enter your full name",
+        "emailLabel": "Email *",
+        "emailPlaceholder": "info@bioherbals.uz",
+        "messageLabel": "Message",
+        "messagePlaceholder": "Write your question or comment...",
+        "submitButton": "Send Message"
+      },
+      "toast": {
+        "success": "Your message has been sent successfully! We’ll get back to you soon.",
+        "error": "An error occurred while sending your message. Please try again later."
+      }
+    },
+    "hero": {
+      "naturalProduct": "100% Natural Product",
+      "title": "The treasures of Uzbekistan — dried fruits, herbs, and delicious nuts all in one place.",
+      "brand": "BIOHERBALS",
+      "subtitle": "Dried fruits, healing herbs, and tasty nuts — delivered anywhere in the world.",
+      "contactBtn": "Contact Us",
+      "productsBtn": "Products"
+    },
+    "features": {
+      "section": {
+        "subtitle": "Our Advantages",
+        "title": "Why Choose Us?",
+        "description": "Bioherbals is a source of natural products for a healthy life. We produce high-quality dried fruits, vegetables, and medicinal herbs, preserving their natural taste, aroma, and benefits. Bioherbals — quality and care in every product."
+      },
+      "image": {
+        "alt": "Products of Uzbekistan",
+        "title": "Natural Products",
+        "description": "Wholesale of dried fruits, mountain herbs, and nuts grown under the Uzbek sun. Guaranteed high quality and fast delivery."
+      },
+      "items": {
+        "quality": {
+          "title": "High Quality",
+          "description": "All products are hand-picked and quality controlled"
+        },
+        "delivery": {
+          "title": "Fast Delivery",
+          "description": "Simple and convenient — we deliver your products quickly and efficiently."
+        },
+        "certified": {
+          "title": "Certified",
+          "description": "All necessary certificates and permits are available"
+        },
+        "partner": {
+          "title": "Reliable Partner",
+          "description": "We guarantee reliable cooperation with every client"
+        },
+        "guarantee": {
+          "title": "Guarantee",
+          "description": "Full guarantee of product quality and safety"
+        },
+        "support": {
+          "title": "24/7 Support",
+          "description": "Quick answers and assistance with any questions"
+        }
+      }
+    },
+    "products": {
+    "sectionTitle": "We Offer",
+    "categories": {
+      "herbs": "HERBAL TEAS ",
+      "fruits": "DRIED FRUITS ",
+      "nuts": "NUT PRODUCTS "
+    },
+    "herbsList": {
+      "Травы": "Medicinal Herbs (Herbae medicinales)",
+      "Специи": "Spices and Aromatic Plants (Species aromaticae)",
+      "Фиточаи": "Herbal Teas & Infusions (Infusiones herbarum)",
+      "Иван": "Ivan Tea (Epilobium angustifolium)",
+      "Плоды": "Fruits and Berries (Fructus et baccae)",
+      "Коренья": "Roots (Radices)",
+      "Грибы": "Mushrooms (Fungi)",
+      "Цветы": "Flowers (Flores)"
+    },
+    "fruitsList": {
+      "Изюм": "Sultana Raisins (Uvae passae Sultanae)",
+      "ИзюмТомпсон": "Thompson Raisins (Uvae passae Thompsonii)",
+      "ЧёрныйИзюм": "Black Raisins (Uvae passae Nigrae)",
+      "Курага": "Dried Apricots (Armeniacae fructus exsiccati)",
+      "КурагаОрганик": "Organic Dried Apricots (Armeniacae fructus organici)",
+      "Чернослив": "Dried Prunes (Prunae fructus exsiccati)"
+    },
+    "nutsList": {
+      "Yongoq": "Walnuts (Juglans regia)",
+      "Миндаль": "Almonds (Amygdalus communis)"
+    },
+    "minimal": {
+      "title": "Minimum Order",
+      "description": "We only work with bulk orders – at least 20 tons."
+    }
+  },
+  "footer": {
+  "description": "Wholesale of natural dried fruits, healing herbs gathered from the mountains, and delicious nuts grown under the sun of Uzbekistan. High quality and fast delivery are guaranteed.",
+  "companyTitle": "Company",
+  "companyLinks": {
+    "about": "About Us",
+    "products": "Products",
+    "delivery": "Delivery",
+    "contact": "Contact"
+  },
+  "legalTitle": "Legal",
+  "legalLinks": {
+    "terms": "Terms of Use",
+    "privacy": "Privacy Policy",
+    "refund": "Refund Policy"
+  },
+  "contactTitle": "Get in Touch",
+  "phone": "Phone",
+  "email": "Email",
+  "socialTitle": "Social Media",
+  "rights": "All rights reserved.",
+  "worldwide": "Regardless of region or country — we deliver worldwide."
+}
+
+  }
+  

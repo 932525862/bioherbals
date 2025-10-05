@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
@@ -10,79 +11,63 @@ import {
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 // Import product images
-import blackRaisins from "@/assets/products/black-raisins.jpg";
-import goldenRaisins from "@/assets/products/golden-raisins.jpg";
-import driedApricots from "@/assets/products/dried-apricots.jpg";
-import prunes from "@/assets/products/prunes.jpg";
 import walnuts from "@/assets/products/walnuts.jpg";
 import almonds from "@/assets/products/almonds.jpg";
-import chamomile from "@/assets/products/chamomile.jpg";
-import mint from "@/assets/products/mint.jpg";
-import ivanChai from "@/assets/products/ivan-chai.jpg";
+
+// herbs & teas
+import Травы from "@/assets/products/Травы, сборы.jpeg";
+import Фиточаи from "@/assets/products/Фиточаи.webp";
+import Специи from "@/assets/products/Специи, пряности.jpg";
+import Иван from "@/assets/products/Иван-Чай.jpeg";
+import Плоды from "@/assets/products/Плоды, ягоды .jpg";
+import Коренья from "@/assets/products/Коренья.webp";
+import Грибы from "@/assets/products/Грибы.png";
+import Цветы from "@/assets/products/Цветы.jpg";
+
+// fruits
+import Изюм from "@/assets/products/sultana-raisins.jpg";
+import ИзюмТомпсон from "../assets/products/izym-tompson.jpg";
+import ИзюмГолден from "../assets/products/golden-raisins.jpg";
+import ЧёрныйИзюм from "../assets/products/izyum-sayaki.jpg";
+import Курага from "../assets/products/kuraga-subhona.jpg";
+import Чернослив from "../assets/products/chernosliv-1.jpg";
+import КурагаОрганик from "../assets/products/kuraga-organik.jpg";
+
+// nuts
+import Миндаль from "../assets/products/mindal-main.jpg";
 
 const Products = () => {
   const [selectedCategory, setSelectedCategory] = useState("herbs");
+  const { t } = useTranslation();
 
   const categories = [
-    { id: "herbs", label: "O'TLAR VA CHOYLAR" },
-    { id: "fruits", label: "QURITILGAN MEVALAR" },
-    { id: "nuts", label: "YONG'OQLAR" },
+    { id: "herbs", label: t("products.categories.herbs") },
+    { id: "fruits", label: t("products.categories.fruits") },
+    { id: "nuts", label: t("products.categories.nuts") },
   ];
 
   const allProducts = {
     herbs: [
-      {
-        name: "Romashka",
-        image: chamomile,
-      },
-      {
-        name: "Yalpiz",
-        image: mint,
-      },
-      {
-        name: "Ivan-Choy",
-        image: ivanChai,
-      },
-      {
-        name: "Romashka",
-        image: chamomile,
-      },
+      { name: t("products.herbsList.Травы"), image: Травы },
+      { name: t("products.herbsList.Специи"), image: Специи },
+      { name: t("products.herbsList.Фиточаи"), image: Фиточаи },
+      { name: t("products.herbsList.Иван"), image: Иван },
+      { name: t("products.herbsList.Плоды"), image: Плоды },
+      { name: t("products.herbsList.Коренья"), image: Коренья },
+      { name: t("products.herbsList.Грибы"), image: Грибы },
+      { name: t("products.herbsList.Цветы"), image: Цветы },
     ],
     fruits: [
-      {
-        name: "Qora Mayiz",
-        image: blackRaisins,
-      },
-      {
-        name: "Oltin Mayiz",
-        image: goldenRaisins,
-      },
-      {
-        name: "Quritilgan O'rik",
-        image: driedApricots,
-      },
-      {
-        name: "Olxo'ri",
-        image: prunes,
-      },
+      { name: t("products.fruitsList.Изюм"), image: Изюм },
+      { name: t("products.fruitsList.ИзюмТомпсон"), image: ИзюмТомпсон },
+      { name: t("products.fruitsList.ЧёрныйИзюм"), image: ЧёрныйИзюм },
+      { name: t("products.fruitsList.Курага"), image: Курага },
+      { name: t("products.fruitsList.КурагаОрганик"), image: КурагаОрганик },
+      { name: t("products.fruitsList.Чернослив"), image: Чернослив },
     ],
     nuts: [
-      {
-        name: "Yong'oq",
-        image: walnuts,
-      },
-      {
-        name: "Bodom",
-        image: almonds,
-      },
-      {
-        name: "Yong'oq",
-        image: walnuts,
-      },
-      {
-        name: "Bodom",
-        image: almonds,
-      },
+      { name: t("products.nutsList.Yongoq"), image: walnuts },
+      { name: t("products.nutsList.Миндаль"), image: Миндаль },
     ],
   };
 
@@ -93,7 +78,7 @@ const Products = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-8">
-            Biz taqdim etamiz
+            {t("products.sectionTitle")}
           </h2>
 
           <Tabs
@@ -151,11 +136,10 @@ const Products = () => {
         <div className="mt-16 text-center bg-card rounded-2xl p-8 shadow-[var(--shadow-soft)] border border-border/50 animate-fade-in">
           <div className="flex items-center justify-center gap-2 mb-4">
             <div className="w-2 h-2 bg-destructive rounded-full animate-pulse" />
-            <h3 className="text-2xl font-bold">Minimal Buyurtma</h3>
+            <h3 className="text-2xl font-bold">{t("products.minimal.title")}</h3>
           </div>
           <p className="text-muted-foreground text-lg">
-          Biz faqat <span className="text-primary font-bold">yirik</span>,
-          buyurtmalar bilan ishlaymiz–kamida <span className="text-primary font-bold">20 tonna.</span> 
+            {t("products.minimal.description")}
           </p>
         </div>
       </div>

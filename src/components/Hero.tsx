@@ -9,8 +9,11 @@ import heroImage1 from "../assets/bog`.png";
 import heroImage2 from "../assets/meva.jpg";
 import heroImage3 from "@/assets/hero-3.jpg";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const Hero = () => {
+  const { t } = useTranslation();
+
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -25,7 +28,7 @@ const Hero = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % heroImages.length);
-    }, 5000); // 5 sekundda slayd almashadi
+    }, 5000);
     return () => clearInterval(interval);
   }, [heroImages.length]);
 
@@ -70,20 +73,20 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto space-y-8 animate-fade-in">
           <div className="inline-block">
             <span className="px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-white text-xl font-medium">
-              ♻️ 100% Tabiiy mahsulot
+              ♻️ {t("hero.naturalProduct")}
             </span>
           </div>
 
           <h1 className="text-2xl md:text-4xl font-bold text-white leading-tight">
-          O‘zbekistonning bebaho ne’matlari – quritilgan mevalar, giyohlar va mazali yong‘oqlar bir joyda.
+            {t("hero.title")}
             <br />
-            <span className="bg-gradient-to-r from-white via-accent-foreground to-white  bg-clip-text text-transparent">
-              BIOHERBALS
+            <span className="bg-gradient-to-r from-white via-accent-foreground to-white bg-clip-text text-transparent">
+              {t("hero.brand")}
             </span>
           </h1>
 
           <p className="text-xl md:text-2xl text-white/90 max-w-2xl mx-auto font-light">
-          Quritilgan mevalar, shifobaxsh giyohlar va mazali yong‘oqlar – dunyoning istalgan nuqtasiga yetkazib beriladi.
+            {t("hero.subtitle")}
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
@@ -93,38 +96,18 @@ const Hero = () => {
               onClick={() => scrollToSection("contact")}
               className="group text-lg px-8 py-6"
             >
-              Bog‘lanish uchun
+              {t("hero.contactBtn")}
               <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button
               variant="outline"
               size="lg"
               onClick={() => scrollToSection("products")}
-              className="text-lg  px-8 py-6 text-[#000000] border-white/40 hover:bg-white/20"
+              className="text-lg px-8 py-6 text-[#000000] border-white/40 hover:bg-white/20"
             >
-              Mahsulotlar
+              {t("hero.productsBtn")}
             </Button>
           </div>
-
-          {/* Stats */}
-          {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-12 max-w-3xl mx-auto">
-            <div className="text-center">
-              <div className="text-4xl font-bold text-white">500+</div>
-              <div className="text-white/70 text-sm mt-1">O'tlar turi</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-white">10+</div>
-              <div className="text-white/70 text-sm mt-1">Yillik tajriba</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-white">100%</div>
-              <div className="text-white/70 text-sm mt-1">Tabiiy</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-white">24/7</div>
-              <div className="text-white/70 text-sm mt-1">Qo'llab-quvvatlash</div>
-            </div>
-          </div> */}
         </div>
       </div>
 

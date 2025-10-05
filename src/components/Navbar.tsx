@@ -1,8 +1,13 @@
+"use client";
+
 import { useState, useEffect } from "react";
-import { Menu, X, Phone, MessageCircle } from "lucide-react";
+import { Menu, X, Phone, MessageCircle, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Logo from "@/assets/logo1-Photoroom.png";
+import { useTranslation } from "react-i18next";
+
 const Navbar = () => {
+  const { t, i18n } = useTranslation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -22,12 +27,16 @@ const Navbar = () => {
     }
   };
 
+  const handleChangeLanguage = (lang: string) => {
+    i18n.changeLanguage(lang);
+  };
+
   const navLinks = [
-    { label: "BOSH SAHIFA", id: "hero" },
-    { label: "MAHSULOTLAR", id: "products" },
-    { label: "AFZALLIKLAR", id: "features" },
-    { label: "YETKAZISH", id: "delivery" },
-    { label: "ALOQA", id: "contact" },
+    { label: t("navbar.home"), id: "hero" },
+    { label: t("navbar.products"), id: "products" },
+    { label: t("navbar.features"), id: "features" },
+    { label: t("navbar.delivery"), id: "delivery" },
+    { label: t("navbar.contact"), id: "contact" },
   ];
 
   return (
@@ -42,13 +51,13 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-          <div className="flex items-center justify-between h-24"> {/* h-20 o‘rniga h-24 */}
-  <img 
-    src={Logo} 
-    alt="Logo" 
-    className="h-16 w-auto object-contain" 
-  />
-</div>
+            <div className="flex items-center justify-between h-24">
+              <img
+                src={Logo}
+                alt="Logo"
+                className="h-12 w-auto object-contain md:h-16"
+              />
+            </div>
           </div>
 
           {/* Desktop Navigation */}
@@ -65,16 +74,34 @@ const Navbar = () => {
             ))}
           </div>
 
-          {/* Contact Buttons */}
+          {/* Contact + Language */}
           <div className="hidden md:flex items-center space-x-3">
             <Button variant="ghost" size="sm">
               <Phone className="mr-2 h-4 w-4" />
               +998 00 000-00-00
             </Button>
-            <Button variant="hero" size="sm">
+            <Button
+              variant="hero"
+              size="sm"
+              onClick={() => scrollToSection("contact")}
+            >
               <MessageCircle className="mr-2 h-4 w-4" />
-              Bog‘lanish
+              {t("navbar.connect")}
             </Button>
+
+            {/* Language Selector */}
+            <div className="flex items-center space-x-2 ml-2">
+              <Globe className="h-5 w-5 text-foreground/70" />
+              <select
+                onChange={(e) => handleChangeLanguage(e.target.value)}
+                value={i18n.language}
+                className="bg-transparent border border-border rounded-md px-2 py-1 text-sm focus:outline-none"
+              >
+                <option value="uz">UZ</option>
+                <option value="ru">RU</option>
+                <option value="en">EN</option>
+              </select>
+            </div>
           </div>
 
           {/* Mobile Menu Button */}
@@ -98,15 +125,35 @@ const Navbar = () => {
                 {link.label}
               </button>
             ))}
+
             <div className="pt-4 border-t border-border space-y-3">
               <Button variant="outline" size="sm" className="w-full">
                 <Phone className="mr-2 h-4 w-4" />
                 +998 00 000-00-00
               </Button>
-              <Button variant="hero" size="sm" className="w-full">
+              <Button
+                variant="hero"
+                size="sm"
+                className="w-full"
+                onClick={() => scrollToSection("contact")}
+              >
                 <MessageCircle className="mr-2 h-4 w-4" />
-                Bog‘lanish
+                {t("navbar.connect")}
               </Button>
+
+              {/* Mobile Language Selector */}
+              <div className="flex items-center justify-center space-x-2 pt-3">
+                <Globe className="h-5 w-5 text-foreground/70" />
+                <select
+                  onChange={(e) => handleChangeLanguage(e.target.value)}
+                  value={i18n.language}
+                  className="bg-transparent border border-border rounded-md px-2 py-1 text-sm focus:outline-none"
+                >
+                  <option value="uz">UZ</option>
+                  <option value="ru">RU</option>
+                  <option value="en">EN</option>
+                </select>
+              </div>
             </div>
           </div>
         )}
