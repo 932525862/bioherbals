@@ -86,17 +86,17 @@ const Products = () => {
             onValueChange={setSelectedCategory}
             className="w-full max-w-2xl mx-auto"
           >
-            <TabsList className="grid w-full grid-cols-3 h-auto">
-              {categories.map((category) => (
-                <TabsTrigger
-                  key={category.id}
-                  value={category.id}
-                  className="text-xs md:text-sm py-3 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"
-                >
-                  {category.label}
-                </TabsTrigger>
-              ))}
-            </TabsList>
+            <TabsList className="grid w-full grid-cols-1 sm:grid-cols-3 gap-2 h-auto">
+  {categories.map((category) => (
+    <TabsTrigger
+      key={category.id}
+      value={category.id}
+      className="text-xs md:text-sm py-3 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"
+    >
+      {category.label}
+    </TabsTrigger>
+  ))}
+</TabsList>
           </Tabs>
         </div>
 
@@ -110,26 +110,27 @@ const Products = () => {
           >
             <CarouselContent className="-ml-4">
               {currentProducts.map((product, index) => (
-                <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/4">
-                  <Card className="group overflow-hidden border-border/50 hover:shadow-[var(--shadow-medium)] transition-all duration-300">
-                    <CardContent className="p-0">
-                      <div className="aspect-square overflow-hidden">
-                        <img
-                          src={product.image}
-                          alt={product.name}
-                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                        />
-                      </div>
-                      <div className="p-6 text-center">
-                        <h3 className="text-xl font-semibold">{product.name}</h3>
-                      </div>
-                    </CardContent>
-                  </Card>
-                </CarouselItem>
+                <CarouselItem key={index} className="pl-4 sm:basis-1/2 md:basis-1/3 lg:basis-1/4">
+                <Card className="group overflow-hidden border-border/50 hover:shadow-[var(--shadow-medium)] transition-all duration-300">
+                  <CardContent className="p-0">
+                    <div className="aspect-square overflow-hidden">
+                      <img
+                        src={product.image}
+                        alt={product.name}
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      />
+                    </div>
+                    <div className="p-6 text-center">
+                      <h3 className="text-xl font-semibold">{product.name}</h3>
+                    </div>
+                  </CardContent>
+                </Card>
+              </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="left-0 -translate-x-12" />
-            <CarouselNext className="right-0 translate-x-12" />
+            <CarouselPrevious className="hidden md:block left-0 -translate-x-12" />
+<CarouselNext className="hidden md:block right-0 translate-x-12" />
+
           </Carousel>
         </div>
 
