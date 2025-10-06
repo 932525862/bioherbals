@@ -12,22 +12,32 @@ import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 // Import product images
 import walnuts from "@/assets/products/walnuts.jpg";
-import almonds from "@/assets/products/almonds.jpg";
-
-// herbs & teas
 import Травы from "@/assets/products/Травы, сборы.jpeg";
 import Фиточаи from "@/assets/products/Фиточаи.webp";
-import Специи from "@/assets/products/Специи, пряности.jpg";
 import Иван from "@/assets/products/Иван-Чай.jpeg";
-import Плоды from "@/assets/products/Плоды, ягоды .jpg";
 import Коренья from "@/assets/products/Коренья.webp";
-import Грибы from "@/assets/products/Грибы.png";
-import Цветы from "@/assets/products/Цветы.jpg";
+import BirchLeaf1 from "@/assets/products/BirchLeaf.jpg";
+import AspenLeaf2  from "@/assets/products/AspenLeaf2.jpg";
+import AspenBark3 from "@/assets/products/AspenBark3.jpg";
+import NettleLeaf4 from "@/assets/products/NettleLeaf4.jpg";
+import WormwoodHerb5 from "@/assets/products/WormwoodHerb5.webp";
+import TansyHerb6 from "@/assets/products/TansyHerb6.jpg";
+import FieldHorsetailHerb7  from "@/assets/products/FieldHorsetailHerb7.webp";
+import Hypericumperforatum8 from "@/assets/products/Hypericumperforatum8.webp";
+import ChagaMushroom9 from "@/assets/products/ChagaMushroom9.png";
+import BurdockRoot11 from "@/assets/products/BurdockRoot11.jpg";
+import DandelionRoot12  from "@/assets/products/Dandelion Root12.webp";
+import GreaterPlantain13  from "@/assets/products/Greater Plantain13.jpg";
+import RibwortPlantain15  from "@/assets/products/Ribwort Plantain15.webp";
+import SunflowerPetals16  from "@/assets/products/Sunflower Petals16.webp";
+import BlackberryLeaf17  from "@/assets/products/BlackberryLeaf.webp";
+import MintLeaves18 from "@/assets/products/Mint Leaves18.jpg";
+import Basil18 from "@/assets/products/Basil18.webp";
+
+
 
 // fruits
-import Изюм from "@/assets/products/sultana-raisins.jpg";
-import ИзюмТомпсон from "../assets/products/izym-tompson.jpg";
-import ИзюмГолден from "../assets/products/golden-raisins.jpg";
+
 import ЧёрныйИзюм from "../assets/products/izyum-sayaki.jpg";
 import Курага from "../assets/products/kuraga-subhona.jpg";
 import Чернослив from "../assets/products/chernosliv-1.jpg";
@@ -35,6 +45,11 @@ import КурагаОрганик from "../assets/products/kuraga-organik.jpg";
 
 // nuts
 import Миндаль from "../assets/products/mindal-main.jpg";
+
+import DriedLicoriceRoot1 from "../assets/products/Dried Licorice Root1.jpg";
+import DriedElecampaneRoot2 from "../assets/products/Dried Elecampane Root2.jpeg";
+import DriedMulberryLeaves3 from "../assets/products/Dried Mulberry Leaves3.jpg";
+import DriedRoseHips4 from "../assets/products/Dried Rose Hips4.jpg";
 
 const Products = () => {
   const [selectedCategory, setSelectedCategory] = useState("herbs");
@@ -49,25 +64,44 @@ const Products = () => {
   const allProducts = {
     herbs: [
       { name: t("products.herbsList.Травы"), image: Травы },
-      { name: t("products.herbsList.Специи"), image: Специи },
       { name: t("products.herbsList.Фиточаи"), image: Фиточаи },
       { name: t("products.herbsList.Иван"), image: Иван },
-      { name: t("products.herbsList.Плоды"), image: Плоды },
       { name: t("products.herbsList.Коренья"), image: Коренья },
-      { name: t("products.herbsList.Грибы"), image: Грибы },
-      { name: t("products.herbsList.Цветы"), image: Цветы },
+      { name: t("birchLeaf"), image: BirchLeaf1},
+      { name: t("aspenLeaf"), image: AspenLeaf2 },
+      { name: t("aspenBark"), image: AspenBark3 },
+      { name: t("nettleLeaf"), image: NettleLeaf4 },
+      { name: t("wormwoodHerb"), image: WormwoodHerb5 },
+      { name: t("tansyHerb"), image: TansyHerb6 },
+      { name: t("fieldHorsetailHerb"), image: FieldHorsetailHerb7 },
+      { name: t("blackberryLeaf"), image: BlackberryLeaf17 },
+      { name: t("stJohnsWortHerb"), image: Hypericumperforatum8 },
+      { name: t("chagaMushroom"), image: ChagaMushroom9 },
+      { name: t("burdockRoot"), image: BurdockRoot11 },
+      { name: t("dandelionRoot"), image: DandelionRoot12 },
+      { name: t("greaterCelandine"), image: Коренья },
+      { name: t("greaterPlantain"), image: GreaterPlantain13 },
+      { name: t("ribwortPlantain"), image: RibwortPlantain15 },
+      { name: t("sunflowerPetals"), image: SunflowerPetals16  },
+      { name: t("mintLeaves"), image: MintLeaves18 },
+      { name: t("basil"), image: Basil18 },
+    
+     
     ],
     fruits: [
-      { name: t("products.fruitsList.Изюм"), image: Изюм },
-      { name: t("products.fruitsList.ИзюмТомпсон"), image: ИзюмТомпсон },
+      { name: t("products.nutsList.Yongoq"), image: walnuts },
+      { name: t("products.nutsList.Миндаль"), image: Миндаль },
       { name: t("products.fruitsList.ЧёрныйИзюм"), image: ЧёрныйИзюм },
       { name: t("products.fruitsList.Курага"), image: Курага },
       { name: t("products.fruitsList.КурагаОрганик"), image: КурагаОрганик },
       { name: t("products.fruitsList.Чернослив"), image: Чернослив },
     ],
     nuts: [
-      { name: t("products.nutsList.Yongoq"), image: walnuts },
-      { name: t("products.nutsList.Миндаль"), image: Миндаль },
+      { name: t("driedLicoriceRoot"), image: DriedLicoriceRoot1 },
+      { name: t("driedElecampaneRoot"), image: DriedElecampaneRoot2 },
+      { name: t("driedMulberryLeaves"), image: DriedMulberryLeaves3 },
+      { name: t("driedRoseHips"), image: DriedRoseHips4 },
+    
     ],
   };
 

@@ -102,7 +102,9 @@ const Contact = () => {
           {/* Contact Methods */}
           <div className="space-y-8 animate-slide-in-left">
             <div>
-              <h3 className="text-2xl font-bold mb-6">{t("contact.infoTitle")}</h3>
+              <h3 className="text-2xl font-bold mb-6">
+                {t("contact.infoTitle")}
+              </h3>
               <p className="text-muted-foreground mb-8">
                 {t("contact.infoText")}
               </p>
@@ -142,19 +144,45 @@ const Contact = () => {
             {/* Working Hours */}
             <Card className="border-border/50 bg-gradient-to-br from-primary/5 to-accent/5 animate-fade-in">
               <CardContent className="p-6">
-                <h4 className="font-semibold mb-4">{t("contact.hoursTitle")}</h4>
-                <div className="space-y-2 text-sm">
+                <h4 className="font-semibold  mb-4">
+                  {t("contact.hoursTitle")}
+                </h4>
+                <div className="space-y-2 text-sm text-[#000000]">
                   <div className="flex justify-between">
-                    <span className="text-muted-foreground">{t("contact.weekdays")}</span>
-                    <span className="font-medium">09:00 - 18:00</span>
+                    <span className="text-[#000000]">
+                      {t("contact.weekdays")}
+                    </span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-muted-foreground">{t("contact.saturday")}</span>
-                    <span className="font-medium">10:00 - 15:00</span>
+                    <span className="text-[#000000]">
+                      {t("contact.saturday")}
+                    </span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-muted-foreground">{t("contact.sunday")}</span>
-                    <span className="font-medium">{t("contact.closed")}</span>
+                    <span className="text-[#000000]">
+                      {t("contact.sunday")}
+                    </span>
+                  </div>
+
+                  <div className="flex justify-between">
+                    <span className="text-[#000000]">
+                      {t("contact.raqam1")}
+                    </span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-[#000000]">
+                      {t("contact.raqam2")}
+                    </span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-[#000000]">
+                      {t("contact.raqam3")}
+                    </span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-[#000000]">
+                      {t("contact.raqam4")}
+                    </span>
                   </div>
                 </div>
               </CardContent>
@@ -164,7 +192,9 @@ const Contact = () => {
           {/* Contact Form */}
           <Card className="border-border/50 shadow-[var(--shadow-medium)] animate-slide-in-right">
             <CardContent className="p-8">
-              <h3 className="text-2xl font-bold mb-6">{t("contact.formTitle")}</h3>
+              <h3 className="text-2xl font-bold mb-6">
+                {t("contact.formTitle")}
+              </h3>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label className="block text-sm font-medium mb-2">
@@ -212,7 +242,12 @@ const Contact = () => {
                   />
                 </div>
 
-                <Button type="submit" variant="hero" size="lg" className="w-full">
+                <Button
+                  type="submit"
+                  variant="hero"
+                  size="lg"
+                  className="w-full"
+                >
                   <Send className="mr-2 h-5 w-5" />
                   {t("contact.send")}
                 </Button>

@@ -1,4 +1,5 @@
 {
+  
     "navbar": {
       "home": "HOME",
       "products": "PRODUCTS",
@@ -14,10 +15,14 @@
       "infoTitle": "Contact Information",
       "infoText": "Reach out to us in any convenient way. We’ll respond as soon as possible and assist you.",
       "phone": "Phone",
-      "hoursTitle": "Working Hours",
-      "weekdays": "Monday – Friday:",
-      "saturday": "Saturday:",
-      "sunday": "Sunday:",
+      "hoursTitle": "Company Details",
+      "weekdays": "BIOGERBALS LLC, Taxpayer Identification Number (TIN): 312340346.",
+      "saturday": "Legal address: 170800, Republic of Uzbekistan, Andijan Region, Markhamat District, Markhamat City.",
+      "sunday": "Bank: JSC “KAPITALBANK”, Andijan Regional Branch.",
+      "raqam1": "Current account in national currency (UZS): 20208000407290933001",
+      "raqam2": "Current account in rubles (RUB): 20208643807290933001",
+      "raqam3": "Current account in US dollars (USD): 20208840707290933001",
+      "raqam4": "Current account in euros (EUR): 20208978907290933001",
       "closed": "Closed",
       "formTitle": "Send a Message",
       "name": "Your Name",
@@ -82,7 +87,7 @@
         "items": [
           { "name": "Asia", "desc": "All Asian countries" },
           { "name": "Europe", "desc": "All European countries" },
-          { "name": "Africa", "desc": "All African countries" },
+          { "name": "Africa", "desc": "All UAE the emirates" },
           { "name": "USA", "desc": "USA and Latin American countries" }
         ],
         "footer": {
@@ -156,7 +161,7 @@
     "categories": {
       "herbs": "HERBAL TEAS ",
       "fruits": "DRIED FRUITS ",
-      "nuts": "NUT PRODUCTS "
+      "nuts": "MEDICINAL PLANTS"
     },
     "herbsList": {
       "Травы": "Medicinal Herbs (Herbae medicinales)",
@@ -206,7 +211,30 @@
   "socialTitle": "Social Media",
   "rights": "All rights reserved.",
   "worldwide": "Regardless of region or country — we deliver worldwide."
-}
+},
+
+  "birchLeaf": "Birch Leaf (Betula pendula / Betula pubescens)",
+  "aspenLeaf": "Aspen Leaf (Populus tremula)",
+  "aspenBark": "Aspen Bark (Populus tremula cortex)",
+  "nettleLeaf": "Nettle Leaf (Urtica dioica)",
+  "wormwoodHerb": "Wormwood Herb (Artemisia absinthium)",
+  "tansyHerb": "Tansy Herb (Tanacetum vulgare)",
+  "fieldHorsetailHerb": "Field Horsetail Herb (Equisetum arvense)",
+  "blackberryLeaf": "Blackberry Leaf (Rubus fruticosus)",
+  "stJohnsWortHerb": "St. John’s Wort Herb (Hypericum perforatum)",
+  "chagaMushroom": "Chaga Mushroom (Inonotus obliquus)",
+  "burdockRoot": "Burdock Root (Arctium lappa)",
+  "dandelionRoot": "Dandelion Root (Taraxacum officinale)",
+  "greaterCelandine": "Greater Celandine (Chelidonium majus)",
+  "greaterPlantain": "Greater Plantain (Plantago major)",
+  "ribwortPlantain": "Ribwort Plantain (Plantago lanceolata)",
+  "sunflowerPetals": "Sunflower Petals (Helianthus annuus)",
+  "mintLeaves": "Mint Leaves (Mentha spp.)",
+  "basil": "Basil (Ocimum basilicum)",
+  "driedLicoriceRoot": "Dried Licorice Root (Glycyrrhiza glabra)",
+  "driedElecampaneRoot": "Dried Elecampane Root (Inula helenium)",
+  "driedMulberryLeaves": "Dried Mulberry Leaves (Morus alba)",
+  "driedRoseHips": "Dried Rose Hips (Rosa canina)"
 
   }
   

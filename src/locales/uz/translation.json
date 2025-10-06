@@ -14,10 +14,14 @@
         "infoTitle": "Aloqa ma'lumotlari",
         "infoText": "O'zingizga qulay usulda biz bilan bog'laning. Biz tez orada javob beramiz va sizga yordam beramiz.",
         "phone": "Telefon",
-        "hoursTitle": "Ish Vaqti",
-        "weekdays": "Dushanba - Juma:",
-        "saturday": "Shanba:",
-        "sunday": "Yakshanba:",
+        "hoursTitle": "Kompaniya rekvizitlari",
+        "weekdays": "BIOGERBALS MCHJ, Soliq to‘lovchining identifikatsiya raqami (STIR):312340346.",
+        "saturday": "Yuridik manzil: 170800, O‘zbekiston Respublikasi, Andijon viloyati, Marhamat tumani, Marhamat shahri.",
+        "sunday": "Bank: “KAPITALBANK” AJ Andijon viloyat filiali.",
+        "raqam1": "Milliy valyutada (so‘mda): 20208000407290933001",
+        "raqam2": "Rubl valyutasida: 20208643807290933001",
+        "raqam3": "AQSh dollarida: 20208840707290933001",
+        "raqam4": "Yevroda: 20208978907290933001",
         "closed": "Dam olish",
         "formTitle": "Xabar Yuborish",
         "name": "Ismingiz",
@@ -82,7 +86,7 @@
           "items": [
             { "name": "Osiyo", "desc": "Osiyo davlatlarining barchasi" },
             { "name": "Yevropa", "desc": "Yevropa davlatlarining barchasi" },
-            { "name": "Afrika", "desc": "Afrika davlatlarining barchasi" },
+            { "name": "BAA", "desc": "BAA barcha amirliklari" },
             { "name": "AQSH", "desc": "AQSH va Lotin Amerikasi davlatlari" }
           ],
           "footer": {
@@ -157,7 +161,7 @@
     "categories": {
       "herbs": "GIYOHLAR VA CHOYLAR",
       "fruits": "QURITILGAN MEVALAR",
-      "nuts": "YONG‘OQLI MAHSULOTLAR"
+      "nuts": "DORIVOR O‘SIMLIKLAR"
     },
     "herbsList": {
       "Травы": "Dorivor o‘tlar",
@@ -207,6 +211,28 @@
     "socialTitle": "Ijtimoiy tarmoqlar",
     "rights": "Barcha huquqlar himoyalangan.",
     "worldwide": "Hudud va mintaqadan qat’i nazar butun dunyo bo‘ylab yetkazib beramiz."
-  }
+  },
+  "birchLeaf": "Qayin bargi",
+  "aspenLeaf": "Terak bargi",
+  "aspenBark": "Terak po‘chog‘i",
+  "nettleLeaf": "Qichitqi o‘t bargi",
+  "wormwoodHerb": "Achchiq polin o‘ti",
+  "tansyHerb": "Qizil o‘t",
+  "fieldHorsetailHerb": "Otquyruq o‘ti",
+  "blackberryLeaf": "Yovvoyi malina bargi",
+  "stJohnsWortHerb": "Avliyo Ioann o‘ti",
+  "chagaMushroom": "Chaga qo‘ziqorini",
+  "burdockRoot": "Lopux ildizi",
+  "dandelionRoot": "Quloqchopon ildizi",
+  "greaterCelandine": "Katta selandin",
+  "greaterPlantain": "Keng bargli bo‘tako‘z",
+  "ribwortPlantain": "Ingichka bargli bo‘tako‘z",
+  "sunflowerPetals": "Kungaboqar gultojisi",
+  "mintLeaves": "Yalpiz barglari",
+  "basil": "Rayhon",
+  "driedLicoriceRoot": "Quritilgan qizilmiya ildizi",
+  "driedElecampaneRoot": "Quritilgan andiz ildizi",
+  "driedMulberryLeaves": "Quritilgan tut barglari",
+  "driedRoseHips": "Quritilgan itburun mevalari"
       
   }
