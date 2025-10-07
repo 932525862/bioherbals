@@ -16,8 +16,7 @@ import Травы from "@/assets/products/Травы, сборы.jpeg";
 import Фиточаи from "@/assets/products/Фиточаи.webp";
 import Иван from "@/assets/products/Иван-Чай.jpeg";
 import Коренья from "@/assets/products/Коренья.webp";
-import BirchLeaf1 from "@/assets/products/BirchLeaf.jpg";
-import AspenLeaf2  from "@/assets/products/AspenLeaf2.jpg";
+
 import AspenBark3 from "@/assets/products/AspenBark3.jpg";
 import NettleLeaf4 from "@/assets/products/NettleLeaf4.jpg";
 import WormwoodHerb5 from "@/assets/products/WormwoodHerb5.webp";
@@ -44,11 +43,11 @@ import Чернослив from "../assets/products/chernosliv-1.jpg";
 import КурагаОрганик from "../assets/products/kuraga-organik.jpg";
 
 // nuts
-import Миндаль from "../assets/products/mindal-main.jpg";
+import Миндаль from "../assets/products/bod.webp";
 
 import DriedLicoriceRoot1 from "../assets/products/Dried Licorice Root1.jpg";
-import DriedElecampaneRoot2 from "../assets/products/Dried Elecampane Root2.jpeg";
-import DriedMulberryLeaves3 from "../assets/products/Dried Mulberry Leaves3.jpg";
+import DriedElecampaneRoot2 from "../assets/products/Elecampane-420x280.jpg";
+import DriedMulberryLeaves3 from "../assets/products/Dried Mulberry Leaves3.webp";
 import DriedRoseHips4 from "../assets/products/Dried Rose Hips4.jpg";
 
 const Products = () => {
@@ -67,8 +66,6 @@ const Products = () => {
       { name: t("products.herbsList.Фиточаи"), image: Фиточаи },
       { name: t("products.herbsList.Иван"), image: Иван },
       { name: t("products.herbsList.Коренья"), image: Коренья },
-      { name: t("birchLeaf"), image: BirchLeaf1},
-      { name: t("aspenLeaf"), image: AspenLeaf2 },
       { name: t("aspenBark"), image: AspenBark3 },
       { name: t("nettleLeaf"), image: NettleLeaf4 },
       { name: t("wormwoodHerb"), image: WormwoodHerb5 },
