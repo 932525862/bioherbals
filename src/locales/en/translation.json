@@ -87,7 +87,7 @@
         "items": [
           { "name": "Asia", "desc": "All Asian countries" },
           { "name": "Europe", "desc": "All European countries" },
-          { "name": "Africa", "desc": "All UAE the emirates" },
+          { "name": "UAE", "desc": "All emirates of the UAE" },
           { "name": "USA", "desc": "USA and Latin American countries" }
         ],
         "footer": {
