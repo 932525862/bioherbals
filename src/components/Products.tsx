@@ -21,19 +21,17 @@ import AspenBark3 from "@/assets/products/AspenBark3.jpg";
 import NettleLeaf4 from "@/assets/products/NettleLeaf4.jpg";
 import WormwoodHerb5 from "@/assets/products/WormwoodHerb5.webp";
 import TansyHerb6 from "@/assets/products/TansyHerb6.jpg";
-import FieldHorsetailHerb7  from "@/assets/products/FieldHorsetailHerb7.webp";
+import FieldHorsetailHerb7 from "@/assets/products/FieldHorsetailHerb7.webp";
 import Hypericumperforatum8 from "@/assets/products/Hypericumperforatum8.webp";
 import ChagaMushroom9 from "@/assets/products/ChagaMushroom9.png";
 import BurdockRoot11 from "@/assets/products/BurdockRoot11.jpg";
-import DandelionRoot12  from "@/assets/products/Dandelion Root12.webp";
-import GreaterPlantain13  from "@/assets/products/Greater Plantain13.jpg";
-import RibwortPlantain15  from "@/assets/products/Ribwort Plantain15.webp";
-import SunflowerPetals16  from "@/assets/products/Sunflower Petals16.webp";
-import BlackberryLeaf17  from "@/assets/products/BlackberryLeaf.webp";
+import DandelionRoot12 from "@/assets/products/Dandelion Root12.webp";
+import GreaterPlantain13 from "@/assets/products/Greater Plantain13.jpg";
+import RibwortPlantain15 from "@/assets/products/Ribwort Plantain15.webp";
+import SunflowerPetals16 from "@/assets/products/Sunflower Petals16.webp";
+import BlackberryLeaf17 from "@/assets/products/BlackberryLeaf.webp";
 import MintLeaves18 from "@/assets/products/Mint Leaves18.jpg";
 import Basil18 from "@/assets/products/Basil18.webp";
-
-
 
 // fruits
 
@@ -49,14 +47,14 @@ import DriedLicoriceRoot1 from "../assets/products/Dried Licorice Root1.jpg";
 import DriedElecampaneRoot2 from "../assets/products/Elecampane-420x280.jpg";
 import DriedMulberryLeaves3 from "../assets/products/yalpz.png";
 import DriedRoseHips4 from "../assets/products/jngil.jpg";
-import oil1 from "../assets/products/oil1.webp"
-import oil2 from "../assets/products/oil2.webp"
-import oil3 from "../assets/products/oil33.jpg"
-import oil4 from "../assets/products/oil4.jpg"
-import oilw1 from "../assets/products/oilw1.webp"
-import oilw4 from "../assets/products/oilw2.jpg"
-import oilw5 from "../assets/products/oil3.webp"
-import oilw6 from "../assets/products/oilw4.jpg"
+import oil1 from "../assets/products/oil1.webp";
+import oil2 from "../assets/products/oil2.webp";
+import oil3 from "../assets/products/oil33.jpg";
+import oil4 from "../assets/products/oil4.jpg";
+import oilw1 from "../assets/products/oilw1.webp";
+import oilw4 from "../assets/products/oilw2.jpg";
+import oilw5 from "../assets/products/oil3.webp";
+import oilw6 from "../assets/products/oilw4.jpg";
 
 const Products = () => {
   const [selectedCategory, setSelectedCategory] = useState("herbs");
@@ -69,7 +67,7 @@ const Products = () => {
     { id: "oil", label: t("products.categories.oil") },
     { id: "water", label: t("products.categories.WATER") },
   ];
- 
+
   const allProducts = {
     herbs: [
       { name: t("products.herbsList.Травы"), image: Травы },
@@ -89,11 +87,9 @@ const Products = () => {
       { name: t("greaterCelandine"), image: Коренья },
       { name: t("greaterPlantain"), image: GreaterPlantain13 },
       { name: t("ribwortPlantain"), image: RibwortPlantain15 },
-      { name: t("sunflowerPetals"), image: SunflowerPetals16  },
+      { name: t("sunflowerPetals"), image: SunflowerPetals16 },
       { name: t("mintLeaves"), image: MintLeaves18 },
       { name: t("basil"), image: Basil18 },
-    
-     
     ],
     fruits: [
       { name: t("products.nutsList.Yongoq"), image: walnuts },
@@ -108,7 +104,6 @@ const Products = () => {
       { name: t("driedElecampaneRoot"), image: DriedElecampaneRoot2 },
       { name: t("driedMulberryLeaves"), image: DriedMulberryLeaves3 },
       { name: t("driedRoseHips"), image: DriedRoseHips4 },
-    
     ],
     oil: [
       { name: t("monarda"), image: oil1 },
@@ -118,14 +113,14 @@ const Products = () => {
     ],
     water: [
       { name: t("peppermint_leaf"), image: oilw1 },
-      { name: t("plantain_leaf"), image:oilw4 },
-      { name: t("rosemary"), image:oilw5 },
-      { name: t("greater_celandine"), image:oilw6 },
-    ]
+      { name: t("plantain_leaf"), image: oilw4 },
+      { name: t("rosemary"), image: oilw5 },
+      { name: t("greater_celandine"), image: oilw6 },
+    ],
   };
 
-
-  const currentProducts = allProducts[selectedCategory as keyof typeof allProducts];
+  const currentProducts =
+    allProducts[selectedCategory as keyof typeof allProducts];
 
   return (
     <section id="products" className="py-24 bg-muted/30">
@@ -141,16 +136,16 @@ const Products = () => {
             className="w-full max-w-2xl mx-auto"
           >
             <TabsList className="grid w-full grid-cols-1 sm:grid-cols-3 gap-2 h-auto">
-  {categories.map((category) => (
-    <TabsTrigger
-      key={category.id}
-      value={category.id}
-      className="text-xs md:text-sm py-3 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"
-    >
-      {category.label}
-    </TabsTrigger>
-  ))}
-</TabsList>
+              {categories.map((category) => (
+                <TabsTrigger
+                  key={category.id}
+                  value={category.id}
+                  className="text-xs md:text-sm py-3 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"
+                >
+                  {category.label}
+                </TabsTrigger>
+              ))}
+            </TabsList>
           </Tabs>
         </div>
 
@@ -164,34 +159,40 @@ const Products = () => {
           >
             <CarouselContent className="-ml-4">
               {currentProducts.map((product, index) => (
-                <CarouselItem key={index} className="pl-4 sm:basis-1/2 md:basis-1/3 lg:basis-1/4">
-                <Card className="group overflow-hidden border-border/50 hover:shadow-[var(--shadow-medium)] transition-all duration-300">
-                  <CardContent className="p-0">
-                    <div className="aspect-square overflow-hidden">
-                      <img
-                        src={product.image}
-                        alt={product.name}
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                      />
-                    </div>
-                    <div className="p-6 text-center">
-                      <h3 className="text-xl font-semibold">{product.name}</h3>
-                    </div>
-                  </CardContent>
-                </Card>
-              </CarouselItem>
+                <CarouselItem
+                  key={index}
+                  className="pl-4 sm:basis-1/2 md:basis-1/3 lg:basis-1/4"
+                >
+                  <Card className="group overflow-hidden border-border/50 hover:shadow-[var(--shadow-medium)] transition-all duration-300">
+                    <CardContent className="p-0">
+                      <div className="aspect-square overflow-hidden">
+                        <img
+                          src={product.image}
+                          alt={product.name}
+                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        />
+                      </div>
+                      <div className="p-6 text-center">
+                        <h3 className="text-xl font-semibold">
+                          {product.name}
+                        </h3>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
               ))}
             </CarouselContent>
             <CarouselPrevious className="hidden md:block left-0 -translate-x-12" />
-<CarouselNext className="hidden md:block right-0 translate-x-12" />
-
+            <CarouselNext className="hidden md:block right-0 translate-x-12" />
           </Carousel>
         </div>
 
         <div className="mt-16 text-center bg-card rounded-2xl p-8 shadow-[var(--shadow-soft)] border border-border/50 animate-fade-in">
           <div className="flex items-center justify-center gap-2 mb-4">
             <div className="w-2 h-2 bg-destructive rounded-full animate-pulse" />
-            <h3 className="text-2xl font-bold">{t("products.minimal.title")}</h3>
+            <h3 className="text-2xl font-bold">
+              {t("products.minimal.title")}
+            </h3>
           </div>
           <p className="text-muted-foreground text-lg">
             {t("products.minimal.description")}
