@@ -161,7 +161,10 @@
     "categories": {
       "herbs": "HERBAL TEAS ",
       "fruits": "DRIED FRUITS ",
-      "nuts": "MEDICINAL PLANTS"
+      "nuts": "MEDICINAL PLANTS",
+      "oil" :"OIL EXTRACTS",
+      "WATER": "WATER-PROPYLENE GLYCOL EXTRACTS"
+
     },
     "herbsList": {
       "Травы": "Medicinal Herbs (Herbae medicinales)",
@@ -234,7 +237,16 @@
   "driedLicoriceRoot": "Dried Licorice Root (Glycyrrhiza glabra)",
   "driedElecampaneRoot": "Dried Elecampane Root (Inula helenium)",
   "driedMulberryLeaves": "Dried Mulberry Leaves (Morus alba)",
-  "driedRoseHips": "Dried Rose Hips (Rosa canina)"
+  "driedRoseHips": "Dried Rose Hips (Rosa canina)",
+  "monarda": "Monarda oil extract",
+  "chamomile": "Chamomile oil extract",
+  "horse_chestnut": "Horse chestnut oil extract",
+  "tansy": "Tansy oil extract" ,
+  "peppermint_leaf": "Peppermint leaf extract",
+  "plantain_leaf": "Plantain leaf extract",
+  "rosemary": "Rosemary extract",
+  "greater_celandine": "Greater celandine herb extract"
+  
 
   }
   

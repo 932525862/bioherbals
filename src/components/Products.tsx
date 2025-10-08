@@ -47,8 +47,16 @@ import Миндаль from "../assets/products/bod.webp";
 
 import DriedLicoriceRoot1 from "../assets/products/Dried Licorice Root1.jpg";
 import DriedElecampaneRoot2 from "../assets/products/Elecampane-420x280.jpg";
-import DriedMulberryLeaves3 from "../assets/products/Dried Mulberry Leaves3.webp";
-import DriedRoseHips4 from "../assets/products/Dried Rose Hips4.jpg";
+import DriedMulberryLeaves3 from "../assets/products/yalpz.png";
+import DriedRoseHips4 from "../assets/products/jngil.jpg";
+import oil1 from "../assets/products/oil1.webp"
+import oil2 from "../assets/products/oil2.webp"
+import oil3 from "../assets/products/oil33.jpg"
+import oil4 from "../assets/products/oil4.jpg"
+import oilw1 from "../assets/products/oilw1.webp"
+import oilw4 from "../assets/products/oilw2.jpg"
+import oilw5 from "../assets/products/oil3.webp"
+import oilw6 from "../assets/products/oilw4.jpg"
 
 const Products = () => {
   const [selectedCategory, setSelectedCategory] = useState("herbs");
@@ -58,8 +66,10 @@ const Products = () => {
     { id: "herbs", label: t("products.categories.herbs") },
     { id: "fruits", label: t("products.categories.fruits") },
     { id: "nuts", label: t("products.categories.nuts") },
+    { id: "oil", label: t("products.categories.oil") },
+    { id: "water", label: t("products.categories.WATER") },
   ];
-
+ 
   const allProducts = {
     herbs: [
       { name: t("products.herbsList.Травы"), image: Травы },
@@ -100,7 +110,20 @@ const Products = () => {
       { name: t("driedRoseHips"), image: DriedRoseHips4 },
     
     ],
+    oil: [
+      { name: t("monarda"), image: oil1 },
+      { name: t("chamomile"), image: oil2 },
+      { name: t("horse_chestnut"), image: oil3 },
+      { name: t("tansy"), image: oil4 },
+    ],
+    water: [
+      { name: t("peppermint_leaf"), image: oilw1 },
+      { name: t("plantain_leaf"), image:oilw4 },
+      { name: t("rosemary"), image:oilw5 },
+      { name: t("greater_celandine"), image:oilw6 },
+    ]
   };
+
 
   const currentProducts = allProducts[selectedCategory as keyof typeof allProducts];
 

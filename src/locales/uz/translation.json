@@ -161,7 +161,10 @@
     "categories": {
       "herbs": "GIYOHLAR VA CHOYLAR",
       "fruits": "QURITILGAN MEVALAR",
-      "nuts": "DORIVOR O‘SIMLIKLAR"
+      "nuts": "DORIVOR O‘SIMLIKLAR",
+     "oil": "YOG‘ EKSTRAKTLARI ",
+     "WATER": "SUV-PROPILEN GLIKOL EKSTRAKTLARI"
+
     },
     "herbsList": {
       "Травы": "Dorivor o‘tlar",
@@ -233,6 +236,14 @@
   "driedLicoriceRoot": "Quritilgan qizilmiya ildizi",
   "driedElecampaneRoot": "Quritilgan andiz ildizi",
   "driedMulberryLeaves": "Quritilgan tut barglari",
-  "driedRoseHips": "Quritilgan itburun mevalari"
+  "driedRoseHips": "Quritilgan itburun mevalari",
+  "monarda": "Monarda yog‘ ekstrakti",
+"chamomile": "Romashka yog‘ ekstrakti",
+"horse_chestnut": "Ot kashtani yog‘ ekstrakti",
+"tansy": "Dalachoy yog‘ ekstrakti",
+"peppermint_leaf": "Yalpiz bargi ekstrakti",
+"plantain_leaf": "Qayrag‘och bargi ekstrakti",
+"rosemary": "Rozmarin ekstrakti",
+"greater_celandine": "Kattabarg tozalovchi o‘t ekstrakti"
       
   }
