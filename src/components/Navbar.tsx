@@ -41,11 +41,15 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? "bg-background/95 backdrop-blur-lg shadow-[var(--shadow-medium)]"
-          : "bg-transparent"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300
+        ${
+          isMobileMenuOpen
+            ? "bg-white shadow-[var(--shadow-medium)]" // 📱 Mobil menyu ochilganda fon oq
+            : isScrolled
+            ? "bg-background/95 backdrop-blur-lg shadow-[var(--shadow-medium)]"
+            : "bg-transparent"
+        }
+      `}
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
@@ -76,10 +80,12 @@ const Navbar = () => {
 
           {/* Contact + Language */}
           <div className="hidden md:flex items-center space-x-3">
-            <Button variant="ghost" size="sm">
-              <Phone className="mr-2 h-4 w-4" />
-              +998 00 000-00-00
-            </Button>
+            <a href="tel:+998905721747">
+              <Button variant="ghost" size="sm">
+                <Phone className="mr-2 h-4 w-4" />
+                +998 90 572-17-47
+              </Button>
+            </a>
             <Button
               variant="hero"
               size="sm"
@@ -129,7 +135,7 @@ const Navbar = () => {
             <div className="pt-4 border-t border-border space-y-3">
               <Button variant="outline" size="sm" className="w-full">
                 <Phone className="mr-2 h-4 w-4" />
-                +998 00 000-00-00
+                <a href="tel:+998905721747">+998 90 572-17-47</a>
               </Button>
               <Button
                 variant="hero"

@@ -56,8 +56,8 @@ const Contact = () => {
     {
       icon: Phone,
       title: t("contact.phone"),
-      value: "+998 00 000-00-00",
-      link: "tel:+998000000000",
+      value: "+998 90 572-17-47",
+      link: "tel:+998905721747",
       color: "from-blue-500 to-cyan-600",
     },
     {
@@ -70,7 +70,7 @@ const Contact = () => {
     {
       icon: MessageCircle,
       title: "WhatsApp",
-      value: "+998 00 000-00-00",
+      value: "+998 90 572-17-47",
       link: "",
       color: "from-green-500 to-emerald-600",
     },

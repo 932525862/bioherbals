@@ -91,7 +91,7 @@ const Footer = () => {
                   className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm"
                 >
                   <Phone className="w-4 h-4" />
-                  +998 00 000-00-00
+                  +998 90 572-17-47
                 </a>
               </li>
               <li>
